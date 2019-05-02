@@ -1,0 +1,4 @@
+Layout/IndentationWidth:
+  Width: 4
+AllCops:
+  TargetRubyVersion: 2.5
