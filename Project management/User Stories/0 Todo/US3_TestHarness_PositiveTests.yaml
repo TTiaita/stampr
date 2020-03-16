@@ -1,0 +1,17 @@
+---
+    Id: US3
+    Name: US3_TestHarness_PositiveTests
+    Tags:
+        - TestHarness
+    Description: >
+        Given I have a test folder that does not contain a negative.yaml file
+        When I run the test harness
+        Then the generated test case should be a positive test
+        And the test should pass if and only if the /Output folder exactly matches the /Expected folder
+    Acceptance Criteria:
+        - A test folder which does not contain a negative.yaml file should generate a positive test case
+        - Positive test cases should pass if and only if no errors occur and the generated output exactly matches (character for character) the files in the /Expected folder.
+        - Otherwise the test case should fail.
+    Comments:
+      TT:
+        - 16/03/20 Todo

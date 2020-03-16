@@ -1,0 +1,14 @@
+---
+    Id: US2
+    Name: US2_TestHarness_SetupDeletesPreviousResults
+    Tags:
+        - TestHarness
+    Description: >
+        Given I have test folders in the /Testing folders
+        When I run the test harness
+        Then the generated test cases should have a setup function clearing previous runs
+    Acceptance Criteria:
+        - When the test harness generates test-unit classes, they contain a setup function which deletes all files in the /Output subfolder if it exists
+    Comments:
+      TT:
+        - 16/03/20 Todo

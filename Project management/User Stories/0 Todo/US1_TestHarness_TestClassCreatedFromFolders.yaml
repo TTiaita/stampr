@@ -1,0 +1,16 @@
+---
+    Id: US1
+    Name: US1_TestHarness_TestClassCreatedFromFolders
+    Tags:
+        - TestHarness
+    Description: >
+        Given I have test folders in the /Testing folder
+        When I run the test harness
+        Then it should generate a test-unit class for each subfolder with the required subfolders
+    Acceptance Criteria:
+        - When the TestHarness is called, a test-unit Class is dynamically generated for each subfolder within the {Root}/Testing folder.
+        - Generated test cases should have the same name as the original folder.
+        - If a test folder does not contain a /Source and /Expected folder, do not create a test and display a command line warning.
+    Comments:
+      TT:
+        - 16/03/20 Todo

@@ -1,0 +1,24 @@
+---
+    Id: US8
+    Name: US8_CMD_CanBeRunFromCMD
+    Tags:
+        - Executable
+    Description: >
+        Given I have Stampr installed
+        When I pass the 'run' command to the executable with an input path and an output path
+        And the input path contains all required files
+        Then Stampr should run against the input folder
+        Amd Stampr should save the result to the output path
+    Acceptance Criteria:
+        - If the executable's run command is called without either an input and output parameter, throw error [#, CommandLine, 'InputPath and OutputPath are both required']
+        - If the executable's run command is called without an output parameter, throw error [#, CommandLine, 'OutputPath is required']
+        - If the executable's run command is called with more than two parameters, throw error [#, CommandLine, 'Too many arguments provided']
+        - If the input path is not a folder, throw error [#, CommandLine, '{InputPath} is not a folder']
+        - If the input path does not exist, throw error [#, CommandLine, '{InputPath} does not exist']
+        - If the input path does not contain a folder named 'stampr', throw error [#, CommandLine, '{InputPath} does not contain the stampr folder']
+        - If none of the errors above are thrown, trigger the 'run' function with OutputPath and InputPath as its parameters
+        - If the output path/folder does not exist, Stampr should create it
+        - Stampr should output its result to the specified output path.
+    Comments:
+      User1:
+        - Not started

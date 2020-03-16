@@ -1,0 +1,17 @@
+---
+    Id: US5
+    Name: US5_Errors_LoadErrorDefinitionFile
+    Tags:
+        - Errors
+    Description: >
+        Given I have an error definition file in .csv format
+        When I run Stampr or its test harness
+        Then the error definition file should be loaded into a globally accessible variable
+    Acceptance Criteria:
+        - When Stampr or the test harness runs on setup it loads the error definition .csv
+        - Each error has an ErrorCode, ErrorType, and ErrorMessage
+        - Each ErrorCode should be unique
+        - The data structure storing the error details must be accessible in all levels of scope (global)
+    Comments:
+      TT:
+        - 16/03/20 Todo

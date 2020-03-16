@@ -1,0 +1,17 @@
+---
+    Id: US4
+    Name: US4_TestHarness_NegativeTests
+    Tags:
+        - TestHarness
+    Description: >
+        Given I have a folder that contains a negative.yaml file
+        When I run the test TestHarness
+        Then the generated test case should be a negative test
+        And the test should pass if and only if an error matching the details of the negative.yaml file occurs
+    Acceptance Criteria:
+        - A test folder which does not contain a negative.yaml file should generate a positive test case
+        - Negative test cases should pass if and only if an error occurs and it matches both the error code and error message defined in the negative.yaml file.
+        - Otherwise the test case should fail.
+    Comments:
+      TT:
+        - 16/03/20 Todo

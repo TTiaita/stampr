@@ -1,0 +1,14 @@
+---
+    Id: US6
+    Name: US6_Errors_RetrieveErrorDetails
+    Tags:
+        - Errors
+    Description: >
+        Given an error code occurs during execution
+        When the error is caught and handled
+        Then the ErrorCode, ErrorType, and ErrorMessage reported to the user should be retrieved from the stored Error Definition file
+    Acceptance Criteria:
+        - When an error is reported to the user the message contains the ErrorCode, ErrorType, and ErrorMessage from the stored Error Definition file
+    Comments:
+      TT:
+        - 16/03/20 Todo

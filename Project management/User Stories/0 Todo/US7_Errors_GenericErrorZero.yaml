@@ -1,0 +1,15 @@
+---
+    Id: US7
+    Name: US7_Errors_GenericErrorZero
+    Tags:
+        - Errors
+    Description: >
+        Given an error occurs and I do not have a more specific error code
+        When I report that error to the user
+        Then I should use the ErrorCode '0', ErrorType 'Unknown', with the message containing the Exception message
+    Acceptance Criteria:
+        - When an error occurs before the error definition file is loaded, use ErrorCode '0', ErrorType 'Unknown', and set the ErrorMessage to the Exception message
+        - When an error occurs and a more specific error code is not specified, use ErrorCode '0', ErrorType 'Unknown', and set the ErrorMessage to the Exception message
+    Comments:
+      TT:
+        - 16/03/20 Todo
