@@ -1,0 +1,35 @@
+---
+    Requirements:
+        MVP:
+            - HTML templater
+            - Batch processing tool
+            - Takes a source folder and produces an output folder (non-destructive)
+            - Command line interface (Windows)
+            - Simple replacement within .html files using <stampr> tags
+            - Nested templates work (but not recursive calls)
+            - Specific variables can be passed to templates
+            - Verifies templates before running
+            - Verifies template-source compatibility before running
+            - Open Source license
+            - Test-driven development
+    Testing:
+        Overview:
+            - Automated testing harness
+            - Utilise pre-built expected output
+            - Generate test cases from folders within structure
+            - Generate report of results, both individual and historical
+            - Separate executable to Stampr
+        Test Cases:
+            - File with no <stampr> tags
+            - File with one-liner <stampr> template and no formatting
+            - File with one-liner <stampr> template and formatting
+            - File with missing <stampr> template (ERROR)
+            - File with self-referencing <stampr> template (ERROR)
+            - File with recursive <stampr> templates (ERROR)
+            - File with parameterised <stampr> template
+            - File with parameterised <stampr> template missing arguments (ERROR)
+            - File with 2-deep nested <stampr> templates
+            - File with 5-deep nested <stampr> templates
+            - File with nested <stampr> template missing deeper template (ERROR)
+            - Directory with multiple files
+            - Director with full site files (including files Stampr ignores)

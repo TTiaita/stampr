@@ -1,0 +1,12 @@
+---
+    Id: US_0
+    Name: ID_Feature_Title
+    Tags:
+        - Meta
+    Description: >
+        Lorem ipsum dolor
+    Acceptance Criteria:
+        - It works
+    Comments:
+      User1:
+        - Not started
